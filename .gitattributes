@@ -1,0 +1,12 @@
+# SnapIt ships PowerShell, WPF and Node sources. Store every file byte-for-byte
+# so a clone behaves exactly like the author's working tree on Windows.
+* -text
+
+# Windows batch files must keep CRLF line endings.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary assets
+*.png binary
+*.ico binary
+*.wav binary

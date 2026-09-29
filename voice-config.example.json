@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy this file to %USERPROFILE%\\.snapit\\voice-config.json and fill in your own values. It configures lib/camarita-bridge.py, the optional voice -> agent bridge.",
+
+  "callback_token": "CHANGE-ME-callback-secret",
+  "camera_token": "CHANGE-ME-camera-secret",
+  "_tokens_comment": "Any long random strings you choose. callback_token authenticates POST /events (header X-Camarita-Token); camera_token is sent to your camera_api as a Bearer token.",
+
+  "bind": "127.0.0.1",
+  "port": 8778,
+  "_network_comment": "The bridge only listens on loopback by default. Use a private address (for example a Tailscale IP) only if you really need remote clients.",
+
+  "camera_api": "http://127.0.0.1:8765",
+  "_camera_comment": "Optional service that receives /v1/voice/hotkey/start and /v1/voice/hotkey/stop. Leave the default if you are not using one.",
+
+  "alert_amplitude": 0.78,
+  "_alert_comment": "Loudness (0-1) of the confirmation beeps played through your speakers.",
+
+  "mirror_enabled": false,
+  "mirror_url": "",
+  "mirror_token": "",
+  "_mirror_comment": "Optional: POST each normalized voice event as JSON to mirror_url for auditing."
+}

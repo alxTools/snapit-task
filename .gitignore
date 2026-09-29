@@ -1,0 +1,39 @@
+# ---- local runtime data (never published) -------------------------------
+.snapit/
+*.log
+
+# ---- editor / OS noise --------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+
+# ---- node ---------------------------------------------------------------
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# ---- python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- local dev backups and pre-change snapshots -------------------------
+# These exist in a working tree while iterating on SnapIt. They are not part
+# of the distributed app and must never reach a fresh clone.
+*.before-*
+*.bak
+*.bak-*
+*.orig
+*.snapit-backup-*
+
+# ---- generated artifacts ------------------------------------------------
+installer/.shots/
+tests/.tmp/
+coverage/
+
+# ---- local tooling scratch (screenshots pasted into an agent session) ----
+.dsh-vision-toolkit/
+

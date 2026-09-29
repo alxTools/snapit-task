@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Sektor Focus Call</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="call-shell">
+    <div class="scanline"></div>
+    <header><span class="live-dot"></span><span>SNAPIT SECURE VOICE</span></header>
+    <section class="hero">
+      <div class="avatar-ring"><img src="/avatar.png" alt="Sektor Focus chibi avatar"></div>
+      <h1>Sektor Focus</h1>
+      <p id="status" class="status">Listo para conectar</p>
+      <div id="meter" class="meter"><i></i><i></i><i></i><i></i><i></i></div>
+    </section>
+    <section class="transcript" aria-live="polite">
+      <p class="eyebrow">CONVERSACIÓN</p>
+      <div id="messages"><p class="placeholder">Aquí aparecerá una transcripción breve mientras hablan.</p></div>
+    </section>
+    <section class="controls">
+      <button id="start" class="primary"><span>☎</span> Iniciar llamada</button>
+      <button id="mute" class="secondary" disabled>Silenciar</button>
+      <button id="end" class="danger" disabled>Finalizar</button>
+    </section>
+    <p class="privacy">El micrófono solo se activa después de pulsar “Iniciar llamada”. La API key permanece en el bridge local.</p>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

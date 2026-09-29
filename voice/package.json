@@ -1,0 +1,15 @@
+{
+  "name": "snapit-elevenlabs-voice",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --platform=browser --format=esm --target=es2022 --outfile=public/app.js",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@elevenlabs/client": "1.24.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
